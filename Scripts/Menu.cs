@@ -16,6 +16,12 @@ public class Menu : MonoBehaviour
     public GameObject credits; 
     public AudioSource button;
     public Slider volumeSlider;
+    public static bool gamePaused = false;
+    public GameObject pauseMenu;
+    public GameObject quitMenu;
+    public GameObject controlMenu;
+    public GameObject deathScreen;
+    public LoadCave inCave;
     public void PlaySound()
     {
         button.Play();
@@ -28,9 +34,17 @@ public class Menu : MonoBehaviour
     {
         settings.SetActive(!settings.activeSelf);
     }
+    public void ControlsMenu()
+    {
+        controlMenu.SetActive(!controlMenu.activeSelf);
+    }
     public void CreditsMenu()
     {
         credits.SetActive(!credits.activeSelf);
+    }
+    public void QuitMenu()
+    {
+        quitMenu.SetActive(!quitMenu.activeSelf);
     }
     public void ChangeVolume()
     {
@@ -41,10 +55,35 @@ public class Menu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void PauseGame()
+    {
+        pauseMenu.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 0f;
+        gamePaused = true;
+    }
+    public void ResumeGame()
+    {
+        pauseMenu.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Time.timeScale = 1f;
+        gamePaused = false;
+    }
+    public void MenuLoad()
+    {
+        pauseMenu.SetActive(false);
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 1f;
+        gamePaused = false;
+        inCave.GetComponent<LoadCave>().MenuSwap();
+    }
     private void Awake()
     {
         settings.SetActive(false);
         credits.SetActive(false);
+        pauseMenu.SetActive(false);
+        quitMenu.SetActive(false);
+        deathScreen.SetActive(false);
         if (!PlayerPrefs.HasKey("Mastervolume"))
         {
             PlayerPrefs.SetFloat("Mastervolume", 1);
@@ -54,6 +93,18 @@ public class Menu : MonoBehaviour
         {
             Load();
         }
+    }
+    public void MenuUI()
+    {
+        if(gamePaused)
+        {
+            ResumeGame();
+        }
+        else
+        {
+            PauseGame();
+        }
+        Debug.Log("Pause working");
     }
     private void Load()
     {

@@ -18,7 +18,12 @@ public class SmallEnemy : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -28,6 +33,8 @@ public class SmallEnemy : MonoBehaviour
             healthDisplay.text = currentHealth.ToString();
         }
     }
+
+
     // Start is called before the first frame update
     void Start()
     {
