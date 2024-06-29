@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadCave : Collectible
 {
-    public static bool enteredCave = false;
+    public bool enteredCave = false;
     public void MenuSwap()
     {
         enteredCave = false;
@@ -17,12 +17,18 @@ public class LoadCave : Collectible
         if (enteredCave == false)
         {
             SceneManager.LoadScene(2);
-            enteredCave = false;
+            enteredCave = true;
+            Debug.Log(enteredCave);
         }
         else
         {
-            SceneManager.LoadScene(0);
-            enteredCave = true;
+            SceneManager.LoadScene(1);
+            enteredCave = false;
         }
+    }
+    private void Start()
+    {
+        MenuSwap();
+        Debug.Log(enteredCave);
     }
 }

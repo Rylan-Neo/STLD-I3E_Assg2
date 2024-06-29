@@ -9,15 +9,21 @@ using UnityEngine;
 
 public class ItemDrop : MonoBehaviour
 {
+    const float m_dropChance = 1f / 4f;
     [SerializeField]
     private GameObject spawnObject;
-    [SerializeField]
-    private AudioClip collectAudio;
 
-    private void OnCollisionEnter(Collision collision)
+     public void DestroyShell()
     {
-        if (collision.gameObject.tag == "Player")
-            AudioSource.PlayClipAtPoint(collectAudio, transform.position, 1f);
+        if (Random.Range(0f, 1f) <= m_dropChance)
+        {
+            SpawnObject();
+        }
+        Destroy(gameObject);
+    }
+
+    public void GuarenteedDrop()
+    {
         SpawnObject();
         Destroy(gameObject);
     }
@@ -25,5 +31,6 @@ public class ItemDrop : MonoBehaviour
     void SpawnObject()
     {
         Instantiate(spawnObject, transform.position, spawnObject.transform.rotation);
+        Debug.Log("Item should have spawned");
     }
 }

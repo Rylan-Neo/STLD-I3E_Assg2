@@ -14,4 +14,8 @@ public class Billboard : MonoBehaviour
     {
         transform.LookAt(transform.position + cam.forward);
     }
+    private void Start()
+    {
+        cam = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+    }
 }

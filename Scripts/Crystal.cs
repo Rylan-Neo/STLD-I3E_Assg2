@@ -5,6 +5,11 @@ using UnityEditor;
 
 public class Crystal : Collectible
 {
+    public Player playerScript;
+    private void Awake()
+    {
+        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+    }
     void GetCollected()
     {
         Destroy(gameObject);
@@ -15,5 +20,6 @@ public class Crystal : Collectible
         Debug.Log("Crystal picked up");
         base.Collected(player);
         GetCollected();
+        playerScript.AddCrystal(1);
     }
 }

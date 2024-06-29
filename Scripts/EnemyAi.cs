@@ -21,6 +21,10 @@ public class EnemyAi : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+    public BossShooting bossFire;
+    public bool boss = false;
+    public bool firing = false;
+
     private void Awake()
     {
         player = GameObject.Find("PlayerCapsule").transform;
@@ -67,16 +71,27 @@ public class EnemyAi : MonoBehaviour
     {
         agent.SetDestination(player.position);
     }
+    private void Firing()
+    {
+        firing = false;
+    }
 
     private void AttackPlayer()
     {
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
+        if (boss == true && firing == false)
+        {
+            bossFire.AttackPlayer();
+            firing = true;
+            Invoke("Firing", 0.2f);
+        }
 
         transform.LookAt(player);
 
         if (!alreadyAttacked)
         {
+
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
