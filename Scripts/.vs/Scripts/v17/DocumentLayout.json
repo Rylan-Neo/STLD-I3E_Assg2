@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rylan\\STLD-I3E_Asg2\\Assets\\Scripts\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rylan\\STLD-I3E_Asg2\\Assets\\Scripts\\SceneRelated\\UnlockBoss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SceneRelated\\UnlockBoss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rylan\\STLD-I3E_Asg2\\Assets\\Scripts\\UI\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rylan\\STLD-I3E_Asg2\\Assets\\Scripts\\UI\\StartDialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\StartDialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rylan\\STLD-I3E_Asg2\\Assets\\Scripts\\Player\u0026Enemy\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Player\u0026Enemy\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StartDialogue.cs",
+              "DocumentMoniker": "C:\\Users\\rylan\\STLD-I3E_Asg2\\Assets\\Scripts\\UI\\StartDialogue.cs",
+              "RelativeDocumentMoniker": "UI\\StartDialogue.cs",
+              "ToolTip": "C:\\Users\\rylan\\STLD-I3E_Asg2\\Assets\\Scripts\\UI\\StartDialogue.cs",
+              "RelativeToolTip": "UI\\StartDialogue.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T07:43:09.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnlockBoss.cs",
+              "DocumentMoniker": "C:\\Users\\rylan\\STLD-I3E_Asg2\\Assets\\Scripts\\SceneRelated\\UnlockBoss.cs",
+              "RelativeDocumentMoniker": "SceneRelated\\UnlockBoss.cs",
+              "ToolTip": "C:\\Users\\rylan\\STLD-I3E_Asg2\\Assets\\Scripts\\SceneRelated\\UnlockBoss.cs",
+              "RelativeToolTip": "SceneRelated\\UnlockBoss.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T07:34:15.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\rylan\\STLD-I3E_Asg2\\Assets\\Scripts\\UI\\Menu.cs",
+              "RelativeDocumentMoniker": "UI\\Menu.cs",
+              "ToolTip": "C:\\Users\\rylan\\STLD-I3E_Asg2\\Assets\\Scripts\\UI\\Menu.cs",
+              "RelativeToolTip": "UI\\Menu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T07:34:07.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\rylan\\STLD-I3E_Asg2\\Assets\\Scripts\\Player\u0026Enemy\\Player.cs",
+              "RelativeDocumentMoniker": "Player\u0026Enemy\\Player.cs",
+              "ToolTip": "C:\\Users\\rylan\\STLD-I3E_Asg2\\Assets\\Scripts\\Player\u0026Enemy\\Player.cs",
+              "RelativeToolTip": "Player\u0026Enemy\\Player.cs",
+              "ViewState": "AQIAADIBAAAAAAAAAAAAAEkBAAC0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T07:34:20.658Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

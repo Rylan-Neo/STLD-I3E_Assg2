@@ -2892,7 +2892,7 @@ GameObject:
   - component: {fileID: 337382480215807976}
   m_Layer: 0
   m_Name: Untextured_King_metal_crab 1
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3022,13 +3022,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc06c4d994633cd43b7838585ec7372d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  playerScript: {fileID: 0}
   maxHealth: 4800
   currentHealth: 0
+  damage: 32
   healthBar: {fileID: 4294318589809494759}
   healthDisplay: {fileID: 2138357078097595299}
-  damage: 32
   itemDrop: {fileID: 218530319660213049}
-  playerScript: {fileID: 0}
 --- !u!114 &218530319660213049
 MonoBehaviour:
   m_ObjectHideFlags: 0
